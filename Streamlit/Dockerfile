@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.7-slim
+FROM python:3.7
 
 # Set the working directory to /app
 WORKDIR /app
@@ -16,7 +16,7 @@ EXPOSE 8501
 ENTRYPOINT ["streamlit","run"]
 
 # Run app.py when the container launches
-CMD ["appstreamlit.py"]
+CMD ["app.py"]
 
 
 
